@@ -3,6 +3,6 @@
     <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Cake.Tool" Version="6.2.0" />
+    <PackageReference Include="Cake.Tool" Version="7.0.0" />
   </ItemGroup>
 </Project>
