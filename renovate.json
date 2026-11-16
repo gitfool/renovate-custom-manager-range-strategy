@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": true,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [ "/^(default|bump)\\.txt$/" ],
+      "matchStrings": [ "datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\nversion=(?<currentValue>\\S+)" ]
+    }
+  ],
+  "packageRules": [
+    {
+      "matchFileNames": [ "bump.txt" ],
+      "rangeStrategy": "bump"
+    }
+  ]
+}
